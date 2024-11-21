@@ -1,0 +1,96 @@
+.login .page-header {
+    background-image: url('https://images.unsplash.com/photo-1464207687429-7505649dae38?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important; 
+}
+
+.register .page-header {
+    background-image: url('https://images.unsplash.com/photo-1701192305623-63405371cac2?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important; 
+}
+
+.index-page .header {
+    position: relative;
+    background-image: url('https://plus.unsplash.com/premium_photo-1680721445241-f06bc430a6fb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.index-page .header::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.index-page .header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.sign-in-basic .container { 
+    animation: showY 1s alternate both;
+}
+
+.sign-in-basic { 
+    animation: showF 1s alternate both;
+}
+
+@keyframes showF {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes showY {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.custom-card {
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header-custom {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    color: white !important;
+}
+
+.divider {
+    margin: 10px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #4e54c8, #8f94fb) !important;
+    border: none;
+    color: white;
+    transition: 0.3s ease all;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #8f94fb, #4e54c8) !important; 
+    box-shadow: 0 4px 10px rgba(78, 84, 200, 0.4) !important;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(78, 84, 200, 0.5) !important;
+}
+
+.text-primary {
+    color: #8f94fb !important;
+}
+
+.position-fixed {
+    z-index: 10;
+}
