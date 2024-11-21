@@ -139,6 +139,26 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        function logout() {
+            localStorage.removeItem('loggedInUser');
+            localStorage.removeItem('users'); 
+
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'info',
+                title: 'Cerrando sesión...',
+                showConfirmButton: false,
+                timer: 2000,
+                timerProgressBar: true,
+            });
+
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 2000);
+        }
+
+
         const loggedInUser = localStorage.getItem('loggedInUser');
         const users = JSON.parse(localStorage.getItem('users')) || [];
         const user = users.find(u => u.email === loggedInUser);
