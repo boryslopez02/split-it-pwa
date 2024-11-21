@@ -30,10 +30,6 @@
     z-index: 2;
 }
 
-.sign-in-basic .container { 
-    animation: showY 1s alternate both;
-}
-
 .sign-in-basic { 
     animation: showF 1s alternate both;
 }
@@ -44,15 +40,6 @@
     }
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes showY {
-    0% {
-        transform: translateY(100px);
-    }
-    100% {
-        transform: translateY(0);
     }
 }
 
